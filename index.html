@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Dash JS (1280x640)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="crash-flash"></div>
+
+        <div id="hud" style="display: none;">
+            <button id="menu-btn" onclick="exitToMenu()">MENU</button>
+            <div class="top-bar">
+                <div id="mode-display">CUBE</div>
+                <div id="progress-container">
+                    <div id="progress-fill"></div>
+                </div>
+                <div id="attempt-display">ATT. <span id="attempt-count">1</span></div>
+            </div>
+        </div>
+
+        <div id="main-menu">
+            <h1 class="logo">GEOMETRY JS</h1>
+            <div class="level-select">
+                <div class="lvl-btn" onclick="startLevel(0)">
+                    <span class="lvl-name">1. STEREO MADNESS</span>
+                    <span class="lvl-diff" style="color:#00ff00">EASY</span>
+                </div>
+                <div class="lvl-btn" onclick="startLevel(1)">
+                    <span class="lvl-name">2. BACK ON TRACK</span>
+                    <span class="lvl-diff" style="color:#ffff00">NORMAL</span>
+                </div>
+                <div class="lvl-btn" onclick="startLevel(2)">
+                    <span class="lvl-name">3. POLARGEIST</span>
+                    <span class="lvl-diff" style="color:#ffff00">NORMAL</span>
+                </div>
+                <div class="lvl-btn" onclick="startLevel(3)">
+                    <span class="lvl-name">4. DRY OUT</span>
+                    <span class="lvl-diff" style="color:#ffaa00">HARD</span>
+                </div>
+                <div class="lvl-btn" onclick="startLevel(4)">
+                    <span class="lvl-name">5. BASE AFTER BASE</span>
+                    <span class="lvl-diff" style="color:#ffaa00">HARD</span>
+                </div>
+                <div class="lvl-btn" onclick="startLevel(5)">
+                    <span class="lvl-name">6. CAN'T LET GO</span>
+                    <span class="lvl-diff" style="color:#ff0000">HARDER</span>
+                </div>
+                <div class="lvl-btn" onclick="startLevel(6)">
+                    <span class="lvl-name">7. JUMPER</span>
+                    <span class="lvl-diff" style="color:#ff0000">HARDER</span>
+                </div>
+                <div class="lvl-btn" onclick="startLevel(7)">
+                    <span class="lvl-name">8. TIME MACHINE</span>
+                    <span class="lvl-diff" style="color:#ff00ff">INSANE</span>
+                </div>
+                <div class="lvl-btn" onclick="startLevel(8)">
+                    <span class="lvl-name">9. CYCLES</span>
+                    <span class="lvl-diff" style="color:#ff00ff">INSANE</span>
+                </div>
+                <div class="lvl-btn" onclick="startLevel(9)">
+                    <span class="lvl-name">10. XSTEP</span>
+                    <span class="lvl-diff" style="color:#4400ff">DEMON</span>
+                </div>
+                <div class="lvl-btn" onclick="startLevel(10)">
+                    <span class="lvl-name">11. CLUTTERFUNK</span>
+                    <span class="lvl-diff" style="color:#4400ff">DEMON</span>
+                </div>
+                <div class="lvl-btn" onclick="startLevel(11)">
+                    <span class="lvl-name">12. THEORY OF EVERYTHING</span>
+                    <span class="lvl-diff" style="color:#4400ff">DEMON</span>
+                </div>
+                <div class="lvl-btn" onclick="startLevel(12)">
+                    <span class="lvl-name">13. ELECTROMAN ADVEN.</span>
+                    <span class="lvl-diff" style="color:#ff0000">HARD DEMON</span>
+                </div>
+                <div class="lvl-btn" onclick="startLevel(13)">
+                    <span class="lvl-name">14. CLUBSTEP</span>
+                    <span class="lvl-diff" style="color:#4400ff">EXTREME</span>
+                </div>
+                <div class="lvl-btn" onclick="startLevel(14)">
+                    <span class="lvl-name">15. ELECTRODYNAMIX</span>
+                    <span class="lvl-diff" style="color:#4400ff">EXTREME</span>
+                </div>
+            </div>
+            <p style="color:#666; font-size: 12px; margin-top: 20px;">Space / Click / Up Arrow to Jump</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
